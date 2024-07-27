@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generador de Contraseñas</h1>
+        <div id="strength" class="strength weak">Débil</div>
+        <div class="form-group">
+            <label for="length">Longitud de la contraseña:</label>
+            <input type="number" id="length" min="4" max="20" value="12">
+        </div>
+        <div class="form-group">
+            <label class="checkbox-container">
+                <input type="checkbox" id="uppercase">
+                <span class="checkmark"></span>
+                Incluir mayúsculas
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="checkbox-container">
+                <input type="checkbox" id="numbers">
+                <span class="checkmark"></span>
+                Incluir números
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="checkbox-container">
+                <input type="checkbox" id="symbols">
+                <span class="checkmark"></span>
+                Incluir símbolos
+            </label>
+        </div>
+        <button id="generateBtn"><i class="fas fa-cog"></i> Generar Contraseña</button>
+        <div class="result">
+            <div id="animatedPassword" class="animated-password"></div>
+            <button id="copyBtn" disabled><i class="fas fa-copy"></i></button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
