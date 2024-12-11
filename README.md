@@ -57,5 +57,5 @@ password-generator/
 ├── styles.css        # Hoja de estilos de la aplicación.
 ├── script.js         # Archivo JavaScript con la lógica de generación de contraseñas.
 ├── icon.png          # Ícono de la aplicación.
-├── screenshot.jpeg   # Captura de pantalla de la aplicación.
+├── screenshot.png   # Captura de pantalla de la aplicación.
 ```
